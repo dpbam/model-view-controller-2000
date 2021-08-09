@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-const routes = require('/routes');
+const routes = require('/controllers/');
 const exphbs = require('express-handlebars');
 const session = require('express-session');
 require('dotenv').config
@@ -11,6 +11,18 @@ const PORT = process.env.PORT || 3001;
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
+
+const sess = {
+  secret: process.env.SECRET_THING,
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
+};
+
+app.use(session(sess));
 
 const hbs = exphbs.create({ helpers });
 

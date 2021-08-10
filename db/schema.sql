@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS model_view_controller_2000_db;
+
+CREATE DATABASE model_view_controller_2000_db;

@@ -33,7 +33,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // turn on routes
 app.use(express.static(path.join(__dirname, "public")));
-// app.use(express.static('views'));
+app.use(express.static("views"));
 
 app.use(require("./controllers/"));
 

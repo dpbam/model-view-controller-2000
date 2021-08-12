@@ -5,14 +5,14 @@ const postdata = [
     title: "Donec posuere metus vitae ipsum.",
     post_text:
       "A bunch of stuff to say about Donec posuere metus vitae ipsum and other things",
-    post_url: "https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png",
+    // post_url: "https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png",
     user_id: 10,
   },
   {
     title: "Morbi non quam nec dui luctus rutrum.",
     post_text:
       "A bunch of stuff to say about Morbi non quam nec dui luctus rutrum and other things",
-    post_url: "https://nasa.gov/donec.json",
+    // post_url: "https://nasa.gov/donec.json",
     user_id: 8,
   },
   {

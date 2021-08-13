@@ -2,8 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="title col">
-        <a href="{{post_url}}" target="_blank">{{title}}</a>
-        {{!-- <span>({{format_url post_url}})</span> --}}
+        <a href="{{post_text}}" target="_blank">{{title}}</a>
       </div>
       <div class="meta col">
         Posted by
@@ -16,5 +15,7 @@
       </div>
     </div>
   </div>
-  <div class="text-blk">{{post_text}}</div>
+  <div class="text-blk">
+    {{post_text}}
+  </div>
 </article>

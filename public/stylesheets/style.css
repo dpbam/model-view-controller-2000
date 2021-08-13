@@ -14,14 +14,15 @@ html {
 
 a {
   text-decoration: none;
-  color: #d9e9d3;
-  background-color: #221010;
+  color: #3486eb;
+  /* background-color: #221010; */
   font-weight: bold;
   transition: color 0.1s;
 }
 
 a:hover {
-  color: #3486eb;
+  color: white;
+  background-color: #3486eb;
 }
 
 button {
@@ -37,8 +38,17 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #949191;
 }
+
+/* .signup-btn {
+  background-color: #666666;
+  border-radius: 5px;
+}
+
+.signup-btn:hover {
+  background-color: #949191;
+} */
 
 .post-list {
   margin: 0;

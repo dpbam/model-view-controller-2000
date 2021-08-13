@@ -11,21 +11,21 @@ router.get("/", withAuth, (req, res) => {
     where: {
       user_id: req.session.user_id,
     },
-    attributes: ["id", "post_text", "title"],
-    include: [
-      {
-        model: Comment,
-        attributes: ["id", "comment_text", "post_id", "user_id", "created_at"],
-        include: {
-          model: User,
-          attributes: ["username"],
-        },
-      },
-      {
-        model: User,
-        attributes: ["username"],
-      },
-    ],
+    // attributes: ["id", "post_text", "title"],
+    // include: [
+    //   {
+    //     model: Comment,
+    //     attributes: ["id", "comment_text", "post_id", "user_id", "created_at"],
+    //     include: {
+    //       model: User,
+    //       attributes: ["username"],
+    //     },
+    //   },
+    //   {
+    //     model: User,
+    //     attributes: ["username"],
+    //   },
+    // ],
   })
     .then((dbPostData) => {
       const posts = dbPostData.map((post) => post.get({ plain: true }));
@@ -36,24 +36,14 @@ router.get("/", withAuth, (req, res) => {
       res.status(500).json(err);
     });
 });
+
 // /dashboard/edit/:id
 router.get("/edit/:id", withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
-    attributes: ["id", "post_text", "title", "created_at"],
-    include: [
-      {
-        model: Comment,
-        attributes: ["id", "comment_text", "post_id", "user_id", "created_at"],
-        include: {
-          model: User,
-          attributes: ["username"],
-        },
-      },
-      {
-        model: User,
-        attributes: ["username"],
-      },
-    ],
+    // attributes: ["id", "post_text", "title", "created_at"],
+    where: {
+      user_id: req.session.user_id,
+    },
   })
     .then((dbPostData) => {
       if (dbPostData) {

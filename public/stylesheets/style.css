@@ -104,7 +104,7 @@ header h1 {
 }
 
 .nav-blk {
-  padding-right: 1rem;
+  padding-right: 0.25rem;
 }
 
 main {
@@ -127,15 +127,25 @@ main {
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: #949191;
+}
+
+.save-btn {
+  background-color: #666666;
+  margin: 0.5rem;
+}
+
+.save-btn:hover {
+  background-color: #949191;
 }
 
 .delete-post-btn {
-  background-color: #d41414;
+  background-color: #666666;
+  margin: 0.5rem;
 }
 
 .delete-post-btn:hover {
-  background-color: #ff643d;
+  background-color: #949191;
 }
 
 .post {
@@ -171,17 +181,8 @@ main {
 }
 
 .edit-link {
-  display: block;
-  margin: -1.5% 0 2% 0;
-}
-
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color 0.1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
+  padding: 1rem;
+  margin: 0;
 }
 
 .comment-form {

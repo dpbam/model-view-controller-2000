@@ -20,19 +20,25 @@
         <h1>
           <strong>Model View Controller 2000!</strong>
         </h1>
+
         <nav class="nav-blk">
+
           <anchor style="padding: 1rem">
             <a href="/">HOME</a>
           </anchor>
+
           <anchor style="padding: 1rem">
             <a href="/dashboard">DASHBOARD</a>
           </anchor>
+
           {{#if loggedIn}}
             <button id="logout" class="btn-no-style">LOGOUT</button>
           {{else}}
             <a href="/login">LOGIN</a>
           {{/if}}
+
         </nav>
+
       </header>
       <main>
         {{{body}}}

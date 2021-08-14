@@ -116,7 +116,8 @@ header h1 {
 }
 
 .nav-blk {
-  padding-right: 0.25rem;
+  /* padding-right: 0.25rem; */
+  margin-right: 2rem;
 }
 
 main {

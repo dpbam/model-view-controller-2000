@@ -23,18 +23,18 @@
 
         <nav class="nav-blk">
 
-          <anchor style="padding: 1rem">
-            <a href="/">HOME</a>
+          <anchor>
+            <a href="/" class="home">HOME</a>
           </anchor>
 
-          <anchor style="padding: 1rem">
-            <a href="/dashboard">DASHBOARD</a>
+          <anchor>
+            <a href="/dashboard" class="dashboard">DASHBOARD</a>
           </anchor>
 
           {{#if loggedIn}}
-            <button id="logout" class="btn-no-style">LOGOUT</button>
+            <button id="logout" class="logout-btn">LOGOUT</button>
           {{else}}
-            <a href="/login">LOGIN</a>
+            <a href="/login" class="login-btn">LOGIN</a>
           {{/if}}
 
         </nav>

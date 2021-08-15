@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="title col">
-        <a href="/post/{{id}}" target="_blank">{{title}}</a>
+        <a href="/post/{{id}}" target="_blank" class="post-title">{{title}}</a>
       </div>
       <div class="meta col">
         Posted by
@@ -10,7 +10,7 @@
         on
         {{format_date created_at}}
         |
-        <a href="/post/{{id}}">{{comments.length}}
+        <a href="/post/{{id}}" class="comments-link">{{comments.length}}
           {{format_plural "comment" comments.length}}</a>
       </div>
     </div>

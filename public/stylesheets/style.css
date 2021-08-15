@@ -12,7 +12,7 @@ html {
   color: #221010;
 }
 
-a {
+/* a {
   text-decoration: none;
   color: #d9e9d3;
   font-weight: bold;
@@ -22,14 +22,14 @@ a {
 }
 
 a:hover {
-  color: white;
-  background-color: #949191;
-}
+  color: #949191;
+} */
 
-button {
+.signup-btn .new-post-btn .add-comment .save-btn .delete-post-btn .login-btn {
   background-color: #666666;
   border: 0;
-  padding: 1%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: white;
   font-weight: bold;
   transition: background-color 0.1s;
@@ -38,23 +38,61 @@ button {
   width: 100%;
 }
 
-button:hover {
+.signup-btn:hover {
   background-color: #949191;
 }
 
-.sign-up-text {
-  color: #3486eb;
-  font-weight: lighter;
+.new-post-btn:hover {
+  background-color: #949191;
 }
 
-.sign-up-text:hover {
+.add-comment:hover {
+  background-color: #949191;
+}
+
+.save-btn:hover {
+  background-color: #949191;
+}
+
+.delete-post-btn {
+  background-color: #949191;
+}
+
+a.sign-up-instead {
+  color: #3486eb;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+a.login-instead {
+  color: #3486eb;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.sign-up-instead:hover {
   background-color: #3486eb;
   color: white;
+}
+
+.login-instead:hover {
+  background-color: #3486eb;
+  color: white;
+}
+
+.post-title {
+  color: #d9e9d3;
+  text-decoration: none;
 }
 
 .post-list {
   margin: 0;
   padding: 0;
+}
+
+.comments-link {
+  color: #d9e9d3;
+  text-decoration: none;
 }
 
 textarea,
@@ -115,9 +153,32 @@ header h1 {
   padding: 1rem;
 }
 
-.nav-blk {
-  /* padding-right: 0.25rem; */
+/* .nav-blk {
+  text-decoration: none;
+  color: #d9e9d3;
+  font-weight: bold;
+  transition: color 0.1s;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   margin-right: 2rem;
+} */
+
+a.home {
+  color: #d9e9d3;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+a.dashboard {
+  color: #d9e9d3;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+a.login-btn {
+  color: #d9e9d3;
+  text-decoration: none;
+  padding: 1rem;
 }
 
 main {
@@ -125,23 +186,39 @@ main {
   padding: 2% 4%;
 }
 
-.btn-no-style {
+.logout-btn {
   background: none;
   border: none;
-  padding: 0;
+  padding: 0px 5px;
   cursor: pointer;
   text-decoration: none;
   color: #d9e9d3;
   font-size: 100%;
-  font-weight: bold;
+  /* font-weight: bold; */
   transition: color 0.1s;
-  margin-left: 16px;
+  margin-left: 2px;
 }
 
-.btn-no-style:hover {
+.logout-btn:hover {
   background: none;
   color: #949191;
 }
+
+button.login-btn {
+  color: white;
+  background-color: #949191;
+  border-radius: 5px;
+}
+
+button.new-post-btn {
+  color: white;
+  background-color: #949191;
+  border-radius: 5px;
+}
+
+/* a.sign-up-instead {
+  background-color: #949191;
+} */
 
 .save-btn {
   background-color: #666666;

@@ -12,19 +12,6 @@ html {
   color: #221010;
 }
 
-/* a {
-  text-decoration: none;
-  color: #d9e9d3;
-  font-weight: bold;
-  transition: color 0.1s;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
-
-a:hover {
-  color: #949191;
-} */
-
 .signup-btn .new-post-btn .add-comment .save-btn .delete-post-btn .login-btn {
   background-color: #666666;
   border: 0;
@@ -152,16 +139,6 @@ header h1 {
   box-shadow: 5px 10px #7d7d7d;
   padding: 1rem;
 }
-
-/* .nav-blk {
-  text-decoration: none;
-  color: #d9e9d3;
-  font-weight: bold;
-  transition: color 0.1s;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  margin-right: 2rem;
-} */
 
 a.home {
   color: #d9e9d3;

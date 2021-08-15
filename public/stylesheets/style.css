@@ -33,7 +33,13 @@ html {
   background-color: #949191;
 }
 
-.add-comment:hover {
+button.add-comment {
+  background-color: #666666;
+  color: white;
+  border-radius: 5px;
+}
+
+button.add-comment:hover {
   background-color: #949191;
 }
 
@@ -41,8 +47,10 @@ html {
   background-color: #949191;
 }
 
-.delete-post-btn {
-  background-color: #949191;
+button.delete-post-btn {
+  background-color: #666666;
+  color: white;
+  border-radius: 5px;
 }
 
 a.sign-up-instead {
@@ -227,19 +235,23 @@ button.new-post-btn {
   background-color: #949191;
 } */
 
-.save-btn {
+button.save-btn {
   background-color: #666666;
+  color: white;
   margin: 0.5rem;
+  border-radius: 5px;
 }
 
 .save-btn:hover {
   background-color: #949191;
 }
 
-.delete-post-btn {
+/* button.delete-post-btn {
   background-color: #666666;
   margin: 0.5rem;
-}
+  border-radius: 5px;
+  color: white;
+} */
 
 .delete-post-btn:hover {
   background-color: #949191;

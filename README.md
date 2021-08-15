@@ -16,9 +16,11 @@ Model View Controller 2000 is a website in the style of a Wordpress blog site wh
 
 ## Installation
 
-Run from Heroku:
+Run from Heroku: https://evening-ocean-53113.herokuapp.com/
 
 ## Usage
+
+Use it on Heroku (see above)
 
 ## Tools Used
 
